@@ -15,11 +15,20 @@
 //     rotate:360
 // })
 
-gsap.from("h1",{
-    // color:"red",
-    opacity:0,
-    y:30,
+// gsap.from("h1",{
+//     // color:"red",
+//     opacity:0,
+//     y:30,
+//     duration:2,
+//     delay:1,
+//     stagger:0.5
+// })
+
+gsap.to("#box",{
+    x:1200,
     duration:2,
     delay:1,
-    stagger:0.5
+    rotate:360,
+    repeat:-1,
+    yoyo:true
 })
