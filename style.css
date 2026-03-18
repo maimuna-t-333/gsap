@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +11,20 @@ html,
 body {
     height: 100%;
     width: 100%;
+    /* background-color: #111; */
+    /* overflow-x: hidden; */
+}
+body{
     background-color: #111;
-    overflow-x: hidden;
+}
+#string{
+    height: 200px;
+    width: 100%;
+    /* background-color: aquamarine; */
+}
+
+svg{
+    background-color: gray;
 }
 /* 
 #page1 {
@@ -107,7 +120,7 @@ h1{
     background-color: crimson;
 }   */
 
-#page1{
+/* #page1{
     width: 100%;
     height: 100vh;
     background-color: black;
@@ -131,4 +144,5 @@ h1{
     font-weight: 600;
     color: #111;
     white-space: nowrap;
-}
+} */
+

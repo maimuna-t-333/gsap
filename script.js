@@ -1,3 +1,43 @@
+var initialPath = `M 10 100 Q 500 100 990 100`;
+
+var finalPath = `M 10 100 Q 500 100 990 100`;
+
+var string = document.querySelector("#string")
+
+string.addEventListener("mousemove", function (dets) {
+  var path = `M 10 100 Q 500 ${dets.y} 990 100`
+
+    gsap.to("svg path", {
+        attr: { d: path },
+        // duration:0.2,
+        // ease:"power3.out"
+    })
+
+
+})
+// string.addEventListener("mouseleave", function (dets) {
+//     gsap.to("svg path", {
+//         attr: { d: initialPath },
+//         duration:1,
+//         ease:"elastic.out(1,0.2)"
+//     })
+
+
+// })
+
+
+// string.addEventListener("mouseenter",function(dets){
+//     // console.log("clicked")
+//     console.log(dets)
+// })
+// string.addEventListener("mouseleave",function(){
+//     // console.log("clicked")
+//     console.log("leaved")
+// })
+// string.addEventListener("mousemove",function(dets){
+//     // console.log("clicked")
+//     console.log(dets.x)
+// })
 // gsap.to("#box1",{
 //     x:1000,
 //     duration:2,
@@ -66,7 +106,7 @@
 //    x:1200,
 //    rotate:360,
 //    duration:1.5,
-//    delay:1 
+//    delay:1
 // })
 // tl.to("#box2",{
 //    x:1200,
@@ -161,15 +201,15 @@
 //     }
 // })
 
-gsap.to("#page2 h1",{
-    transform:"translate(-150%)",
-    scrollTrigger:{
-        trigger:"#page2",
-        scroller:"body",
-        markers:true,
-        start:"top 0%",
-        end:"top -150%",
-        scrub:2,
-        pin:true
-    }
-})
+// gsap.to("#page2 h1",{
+//     transform:"translate(-150%)",
+//     scrollTrigger:{
+//         trigger:"#page2",
+//         scroller:"body",
+//         markers:true,
+//         start:"top 0%",
+//         end:"top -150%",
+//         scrub:2,
+//         pin:true
+//     }
+// })
